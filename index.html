@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<title>ISFB</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 </head>
 
-<body ng-app="isfbApp" ng-controller="MainController as vm">
-	<div ng-show="!vm.clicked">
-		<h2>I'm so fucking bored.</h2>
-		<button ng-click="vm.clickRecord(); vm.randomizer()">Fucking Help Me.</button>
-	</div>
-	<div ng-show="vm.clicked">
-		<h2>You're not fucking bored. You're a fucking {{vm.name}}.<h2>
-		<h2>Why don't you just fucking {{vm.idea}}. Here, use this <a href="{{vm.productLink}}">{{vm.product}}</a>.</h2>
-		<button ng-click="vm.randomizer()">Get another idea.</button>
-	</div>
+<body ng-app="isfbApp" ng-controller="MainController as vm" ng-cloak>
+	<div class="container">
+		<div ng-show="!vm.clicked">
+			<h2 class="h2">"I'm so fucking <span class="bored">bored.</span>"</h2>
+			<button class="btn" ng-click="vm.clickRecord(); vm.randomizer()">Fucking Help Me.</button>
+		</div>
+		<div ng-show="vm.clicked">
+			<h2 class="h2">You're not fucking bored. You're a fucking {{vm.name}}.</h2>
+			<h3 class="h3">Why don't you just fucking {{vm.idea}}. Here, use this <a href="{{vm.productLink}}">{{vm.product}}</a>.</h3>
+			<button class="btn" ng-click="vm.randomizer()">Get another idea.</button>
+		</div>
+		<footer>
+			<p class="matt">This is for you, Matt C.</p>
+		</footer>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 	<script src="controller.js"></script>
 </body>
 
