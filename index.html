@@ -1,1 +1,24 @@
-initial
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISFB</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body ng-app="isfbApp" ng-controller="MainController as vm">
+	<div ng-show="!vm.clicked">
+		<h2>I'm so fucking bored.</h2>
+		<button ng-click="vm.clickRecord(); vm.randomizer()">Fucking Help Me.</button>
+	</div>
+	<div ng-show="vm.clicked">
+		<h2>You're not fucking bored. You're a fucking {{vm.name}}.<h2>
+		<h2>Why don't you just fucking {{vm.idea}}. Here, use this <a href="{{vm.productLink}}">{{vm.product}}</a>.</h2>
+		<button ng-click="vm.randomizer()">Get another idea.</button>
+	</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="controller.js"></script>
+</body>
+
+</html>
