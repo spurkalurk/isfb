@@ -2,16 +2,16 @@ body { background-image: url(bg.png); font-family: 'Montserrat', sans-serif; wid
 a { color: #1e7dd6; text-decoration: none; }
 	a:hover { text-decoration: underline; }
 
-.container { max-width: 1140px; margin: 0 auto; text-align: center; }
+.container { max-width: 960px; margin: 0 auto; text-align: center; }
 
-.h2 { font-size: 5em; }
-.h3 { font-size: 3em; background: #fff; box-shadow: 0 0 50px rgba(0,0,0,.05); padding: 15px; }
+.h2 { font-size: 3.75em; }
+.h3 { font-size: 1.75em; background: #fff; box-shadow: 0 0 50px rgba(0,0,0,.05); padding: 15px; }
 
 .bored { color: #d61e1e; }
 .btn { transition: all .2s ease-in-out; font-size: 1.5em; font-weight: 100; letter-spacing: 2px; padding: .5em; border: 1px solid #222; background: #222; color: #fff; text-shadow: 1px 1px rgba(0,0,0,.25); border: 0; }
 	.btn:hover { transform: scale(1.25); box-shadow: 0 0 10px rgba(0,0,0,.3); background: #d61e1e; cursor: pointer; }
 
-.matt { font-size: .7em; color: #eee; text-align: center; }
+.matt { font-size: .7em; color: #ccc; text-align: center; margin-top: 20px; }
 
 @media (max-width: 767px) {
 	.container { margin: 10px; }

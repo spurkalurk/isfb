@@ -5,6 +5,16 @@
 	<title>ISFB</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-79492710-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 
 <body ng-app="isfbApp" ng-controller="MainController as vm" ng-cloak>
@@ -15,15 +25,14 @@
 		</div>
 		<div ng-show="vm.clicked">
 			<h2 class="h2">You're not fucking bored. You're a fucking {{vm.name}}.</h2>
-			<h3 class="h3">Why don't you just fucking {{vm.idea}}. <a target="_blank" href="{{vm.productLink}}">{{vm.product}}</a>.</h3>
+			<h3 class="h3">Why don't you just fucking {{vm.idea}}.<br/> <a target="_blank" href="{{vm.productLink}}">{{vm.product}}</a>.</h3>
 			<button class="btn" ng-click="vm.randomizer()">Get another idea.</button>
 		</div>
 	</div>
 
-	<!-- <p class="matt">This is for you, Matt C.</p> -->
+	<p class="matt">This is for you, Matt C.</p>
 
 	<script src="controller.js"></script>
-
 </body>
 
 </html>
